@@ -15,6 +15,9 @@ A API desenvolvida utilizando Express e PostgreSQL que gerencia as informações
 ![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white)
 
 # :file_folder: Estrutura do Diagrama ER
+
+<img src="./assets/BDConceito.png">
+
 Atributos da clínicas:
 - codigo (Chave Primária)
 - nome
