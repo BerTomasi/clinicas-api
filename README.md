@@ -5,7 +5,7 @@ Bernardo Tomasi • IFSUL • 2024
 ## :bookmark_tabs: Sumário
 ### [Sobre](#information_source-sobre_o_app) • [Tecnologias](#gear-tecnologias) • [Diagrama ER](#file_folder-estrutura_do_diagrama_er) • [Recursos](#heavy_check_mark-recursos) • [Configuracoes](#rocket-configuracoes)
 # :information_source: Sobre o App
-A API desenvolvida utilizando Express e PostgreSQL que gerencia as informações de clínicas e médicos de um sistema hospitalar, conforme o diagrama Entidade-Relacionamento (ER) fornecido. O diagrama apresenta a estrutura de relacionamento entre as entidades "Clínica" e "Médico", onde cada médico está associado a uma única clínica.
+A API desenvolvida utilizando Express e PostgreSQL que gerencia as informações de clínicas e médicos de um sistema hospitalar. O sistema gerencia as entidades "Clínica" e "Médico", onde cada médico está associado a uma única clínica.
 
 # :gear: Tecnologias
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
