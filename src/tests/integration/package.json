@@ -1,0 +1,18 @@
+{
+  "name": "integration",
+  "version": "1.0.0",
+  "main": "src/tests/integration/sistema.test.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "jest": "^29.7.0",
+    "mocha": "^10.0.0",
+    "supertest": "^6.3.4"
+  }
+}

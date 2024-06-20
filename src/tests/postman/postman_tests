@@ -1,0 +1,2934 @@
+{
+	"info": {
+		"_postman_id": "411ac079-c523-471d-8cb2-1bc940cb4951",
+		"name": "API - Clinicas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24662418"
+	},
+	"item": [
+		{
+			"name": "Comum",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Comum",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "HTML",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"type": "text"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+							"type": "text"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin",
+							"type": "text"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin",
+							"type": "text"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1",
+							"type": "text"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer",
+							"type": "text"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains",
+							"type": "text"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"type": "text"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off",
+							"type": "text"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen",
+							"type": "text"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN",
+							"type": "text"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none",
+							"type": "text"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8",
+							"type": "text"
+						},
+						{
+							"key": "Content-Length",
+							"value": "26",
+							"type": "text"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1a-lqthAOHyOMr3J/A/SDFc4jFACbA\"",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Apr 2024 05:01:35 GMT",
+							"type": "text"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"type": "text"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "API do sistema de clinicas"
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"bernardodtomasi@gmail.com\",\"senha\":\"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"bdt\",\"senha\":\"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "JSON",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"type": "text"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+							"type": "text"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin",
+							"type": "text"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin",
+							"type": "text"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1",
+							"type": "text"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer",
+							"type": "text"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains",
+							"type": "text"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"type": "text"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off",
+							"type": "text"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen",
+							"type": "text"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN",
+							"type": "text"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none",
+							"type": "text"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"type": "text"
+						},
+						{
+							"key": "Content-Length",
+							"value": "271",
+							"type": "text"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"10f-w5dgOstUMn0eelOi+uLojz2dkC8\"",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Apr 2024 05:21:21 GMT",
+							"type": "text"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"type": "text"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"auth\": true,\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImVtYWlsIjoiYmR0IiwidGlwbyI6IkEiLCJ0ZWxlZm9uZSI6Iig1NCk5OTkwNzEzMTAiLCJub21lIjoiQmVybmFyZG8gVG9tYXNpIn0sImlhdCI6MTcxMzE1ODQ4MSwiZXhwIjoxNzEzMTYxNDgxfQ.XST6pFYYw9Rh2TeUrfPqFUOmd8Mr28u-iRwMGHRLxTk\"\n}"
+				}
+			]
+		},
+		{
+			"name": "ADD Clinica",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"name": "cache-control",
+						"sortOrder": 2,
+						"infoTitle": "We recommend using this header",
+						"info": "Postman added \"Cache-Control: no-cache\" as a precautionary measure to prevent the server from returning stale response when one makes repeated requests.\n\nYou can remove this header in the app settings or enter a new one with a different value.",
+						"allowedToToggle": false,
+						"disableEdit": true,
+						"previewSettingsLink": "Go to settings",
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "postman-token",
+						"sortOrder": 3,
+						"infoTitle": "We recommend using this header",
+						"info": "The Postman-Token header appends a random UUID to every outgoing request. Postman adds this header for API developers to better debug requests sent and to ensure separate requests appear distinct to the receiving server.\n\nYou can remove this header in the app settings.",
+						"allowedToToggle": false,
+						"disableEdit": true,
+						"previewSettingsLink": "Go to settings",
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "content-type",
+						"sortOrder": 4,
+						"infoTitle": "This header was automatically added",
+						"info": "The Content-Type header is added to help the server identify the media type of the request body that is present in this request.\n\nUse the request body tab to control the value or to remove this header.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"previewSettingsLink": "Go to body",
+						"key": "Content-Type",
+						"value": "application/json",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "content-length",
+						"sortOrder": 5,
+						"infoTitle": "This header was automatically added",
+						"info": "The Content-Length header was added to indicate to the server the size of the request body that is added to this request. Server uses this value to parse the request body accurately.\n\nYou can remove the header or enter a new one with a different value.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"previewSettingsLink": "Go to body",
+						"key": "Content-Length",
+						"value": "<calculated when request is sent>",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "host",
+						"sortOrder": 6,
+						"infoTitle": "We recommend using this header",
+						"info": "The Host header is added to identify the domain name for which a request is being sent to the server. This header is implicitly sent by every HTTP client.\n\nYou can remove the header or enter a new one with a different value. It is most likely that without this header, your request will return an HTTP 400 error.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "user-agent",
+						"sortOrder": 7,
+						"infoTitle": "We recommend using this header",
+						"info": "The User-Agent header is added to help the server identify Postman as the HTTP requesting application or client.\n\nIt is recommended that this header be sent, but you can remove the header or enter a new one with a different value.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.32.1",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "accept",
+						"sortOrder": 8,
+						"infoTitle": "We recommend using this header",
+						"info": "The \"Accept: */*\" header is added to tell the server that Postman can understand and process all forms of response content types.\n\nIt is recommended that this header be sent, but you can remove the header or enter a new one with a different value.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Accept",
+						"value": "*/*",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "accept-encoding",
+						"sortOrder": 9,
+						"infoTitle": "We recommend using this header",
+						"info": "The Accept-Encoding header is added to indicate to the server that Postman HTTP client supports a defined list of content-encoding or compression algorithms as response.\n\nYou can remove the header or enter a new one with a different value. Doing that may not accurately render the response within the app.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "connection",
+						"sortOrder": 10,
+						"infoTitle": "We recommend using this header",
+						"info": "Postman added the Connection header to indicate the server to keep the underlying network connection open once the current response is received. This allows Postman to reuse the same connection for faster response times in subsequent requests to the same server.\n\nYou can remove this header or enter a new one with a different value, such as `Connection: Close` to control this behaviour.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Connection",
+						"value": "keep-alive",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImVtYWlsIjoiYmVybmFyZG9kdG9tYXNpQGdtYWlsLmNvbSIsInRpcG8iOiJBIiwidGVsZWZvbmUiOiIoNTQpOTk5MDcxMzEwIiwibm9tZSI6IkJlcm5hcmRvIFRvbWFzaSJ9LCJpYXQiOjE3MTMxNTk0OTUsImV4cCI6MTcxMzE2MjQ5NX0.c-nQp9Av80OszlInGOV0nQDlD52laxpGd_aWw3jFiDY",
+						"type": "text",
+						"id": 0
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nome\": \"Clínica XYZ\",\n  \"cep\": \"12345678\",\n  \"numpredio\": \"123\",\n  \"telefone\": \"(11)98765-4321\",\n  \"descricao\": \"Clínica especializada em cardiologia\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/clinicas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"clinicas"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ADD Clinica",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImVtYWlsIjoiYmVybmFyZG9kdG9tYXNpQGdtYWlsLmNvbSIsInRpcG8iOiJBIiwidGVsZWZvbmUiOiIoNTQpOTk5MDcxMzEwIiwibm9tZSI6IkJlcm5hcmRvIFRvbWFzaSJ9LCJpYXQiOjE3MTMxNTk0OTUsImV4cCI6MTcxMzE2MjQ5NX0.c-nQp9Av80OszlInGOV0nQDlD52laxpGd_aWw3jFiDY",
+								"type": "text",
+								"id": 0
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"nome\": \"Clínica XYZ\",\n  \"cep\": \"12345678\",\n  \"numpredio\": \"123\",\n  \"telefone\": \"(11)98765-4321\",\n  \"descricao\": \"Clínica especializada em cardiologia\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/clinicas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"clinicas"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "JSON",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"type": "text"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+							"type": "text"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin",
+							"type": "text"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin",
+							"type": "text"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1",
+							"type": "text"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer",
+							"type": "text"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains",
+							"type": "text"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"type": "text"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off",
+							"type": "text"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen",
+							"type": "text"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN",
+							"type": "text"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none",
+							"type": "text"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"type": "text"
+						},
+						{
+							"key": "Content-Length",
+							"value": "207",
+							"type": "text"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"cf-xFiu5UjhCH7wz7uVr3Yuj7hFHRk\"",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Apr 2024 05:41:50 GMT",
+							"type": "text"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"type": "text"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Clínica criada\",\n    \"objeto\": {\n        \"codigo\": 6,\n        \"nome\": \"Clínica XYZ\",\n        \"cep\": \"12345678\",\n        \"numpredio\": \"123\",\n        \"telefone\": \"(11)98765-4321\",\n        \"descricao\": \"Clínica especializada em cardiologia\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "ADD Medico",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"name": "cache-control",
+						"sortOrder": 2,
+						"infoTitle": "We recommend using this header",
+						"info": "Postman added \"Cache-Control: no-cache\" as a precautionary measure to prevent the server from returning stale response when one makes repeated requests.\n\nYou can remove this header in the app settings or enter a new one with a different value.",
+						"allowedToToggle": false,
+						"disableEdit": true,
+						"previewSettingsLink": "Go to settings",
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "postman-token",
+						"sortOrder": 3,
+						"infoTitle": "We recommend using this header",
+						"info": "The Postman-Token header appends a random UUID to every outgoing request. Postman adds this header for API developers to better debug requests sent and to ensure separate requests appear distinct to the receiving server.\n\nYou can remove this header in the app settings.",
+						"allowedToToggle": false,
+						"disableEdit": true,
+						"previewSettingsLink": "Go to settings",
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "content-type",
+						"sortOrder": 4,
+						"infoTitle": "This header was automatically added",
+						"info": "The Content-Type header is added to help the server identify the media type of the request body that is present in this request.\n\nUse the request body tab to control the value or to remove this header.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"previewSettingsLink": "Go to body",
+						"key": "Content-Type",
+						"value": "application/json",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "content-length",
+						"sortOrder": 5,
+						"infoTitle": "This header was automatically added",
+						"info": "The Content-Length header was added to indicate to the server the size of the request body that is added to this request. Server uses this value to parse the request body accurately.\n\nYou can remove the header or enter a new one with a different value.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"previewSettingsLink": "Go to body",
+						"key": "Content-Length",
+						"value": "<calculated when request is sent>",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "host",
+						"sortOrder": 6,
+						"infoTitle": "We recommend using this header",
+						"info": "The Host header is added to identify the domain name for which a request is being sent to the server. This header is implicitly sent by every HTTP client.\n\nYou can remove the header or enter a new one with a different value. It is most likely that without this header, your request will return an HTTP 400 error.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "user-agent",
+						"sortOrder": 7,
+						"infoTitle": "We recommend using this header",
+						"info": "The User-Agent header is added to help the server identify Postman as the HTTP requesting application or client.\n\nIt is recommended that this header be sent, but you can remove the header or enter a new one with a different value.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.32.1",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "accept",
+						"sortOrder": 8,
+						"infoTitle": "We recommend using this header",
+						"info": "The \"Accept: */*\" header is added to tell the server that Postman can understand and process all forms of response content types.\n\nIt is recommended that this header be sent, but you can remove the header or enter a new one with a different value.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Accept",
+						"value": "*/*",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "accept-encoding",
+						"sortOrder": 9,
+						"infoTitle": "We recommend using this header",
+						"info": "The Accept-Encoding header is added to indicate to the server that Postman HTTP client supports a defined list of content-encoding or compression algorithms as response.\n\nYou can remove the header or enter a new one with a different value. Doing that may not accurately render the response within the app.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "connection",
+						"sortOrder": 10,
+						"infoTitle": "We recommend using this header",
+						"info": "Postman added the Connection header to indicate the server to keep the underlying network connection open once the current response is received. This allows Postman to reuse the same connection for faster response times in subsequent requests to the same server.\n\nYou can remove this header or enter a new one with a different value, such as `Connection: Close` to control this behaviour.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Connection",
+						"value": "keep-alive",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImVtYWlsIjoiYmVybmFyZG9kdG9tYXNpQGdtYWlsLmNvbSIsInRpcG8iOiJBIiwidGVsZWZvbmUiOiIoNTQpOTk5MDcxMzEwIiwibm9tZSI6IkJlcm5hcmRvIFRvbWFzaSJ9LCJpYXQiOjE3MTMxNTk0OTUsImV4cCI6MTcxMzE2MjQ5NX0.c-nQp9Av80OszlInGOV0nQDlD52laxpGd_aWw3jFiDY",
+						"type": "text",
+						"id": 0
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cpf\" : \"123.456.789-12\",\n    \"crm\" : \"654321\",\n    \"nome\" : \"Diogenes Lubiam\",\n    \"especialidade\" : \"Clinico Geral\",\n    \"telefone\" : \"(54)99907-1310\",\n    \"clinica\" : 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/medicos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"medicos"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ADD Medico",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImVtYWlsIjoiYmVybmFyZG9kdG9tYXNpQGdtYWlsLmNvbSIsInRpcG8iOiJBIiwidGVsZWZvbmUiOiIoNTQpOTk5MDcxMzEwIiwibm9tZSI6IkJlcm5hcmRvIFRvbWFzaSJ9LCJpYXQiOjE3MTMxNTk0OTUsImV4cCI6MTcxMzE2MjQ5NX0.c-nQp9Av80OszlInGOV0nQDlD52laxpGd_aWw3jFiDY",
+								"type": "text",
+								"id": 0
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cpf\" : \"123.456.789-12\",\n    \"crm\" : \"654321\",\n    \"nome\" : \"Diogenes Lubiam\",\n    \"especialidade\" : \"Clinico Geral\",\n    \"telefone\" : \"(54)99907-1310\",\n    \"clinica\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/medicos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"medicos"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "JSON",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"type": "text"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+							"type": "text"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin",
+							"type": "text"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin",
+							"type": "text"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1",
+							"type": "text"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer",
+							"type": "text"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains",
+							"type": "text"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"type": "text"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off",
+							"type": "text"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen",
+							"type": "text"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN",
+							"type": "text"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none",
+							"type": "text"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"type": "text"
+						},
+						{
+							"key": "Content-Length",
+							"value": "205",
+							"type": "text"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"cd-80MZkH60Iz73pFwH1TCMcodxq9Q\"",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Apr 2024 05:57:36 GMT",
+							"type": "text"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"type": "text"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Médico criado!\",\n    \"objeto\": {\n        \"codigo\": 4,\n        \"cpf\": \"123.456.789-12\",\n        \"crm\": \"654321\",\n        \"nome\": \"Diogenes Lubiam\",\n        \"especialidade\": \"Clinico Geral\",\n        \"telefone\": \"(54)99907-1310\",\n        \"clinica\": 1\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Clinicas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"name": "cache-control",
+						"sortOrder": 2,
+						"infoTitle": "We recommend using this header",
+						"info": "Postman added \"Cache-Control: no-cache\" as a precautionary measure to prevent the server from returning stale response when one makes repeated requests.\n\nYou can remove this header in the app settings or enter a new one with a different value.",
+						"allowedToToggle": false,
+						"disableEdit": true,
+						"previewSettingsLink": "Go to settings",
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "postman-token",
+						"sortOrder": 3,
+						"infoTitle": "We recommend using this header",
+						"info": "The Postman-Token header appends a random UUID to every outgoing request. Postman adds this header for API developers to better debug requests sent and to ensure separate requests appear distinct to the receiving server.\n\nYou can remove this header in the app settings.",
+						"allowedToToggle": false,
+						"disableEdit": true,
+						"previewSettingsLink": "Go to settings",
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "host",
+						"sortOrder": 6,
+						"infoTitle": "We recommend using this header",
+						"info": "The Host header is added to identify the domain name for which a request is being sent to the server. This header is implicitly sent by every HTTP client.\n\nYou can remove the header or enter a new one with a different value. It is most likely that without this header, your request will return an HTTP 400 error.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "user-agent",
+						"sortOrder": 7,
+						"infoTitle": "We recommend using this header",
+						"info": "The User-Agent header is added to help the server identify Postman as the HTTP requesting application or client.\n\nIt is recommended that this header be sent, but you can remove the header or enter a new one with a different value.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.32.1",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "accept",
+						"sortOrder": 8,
+						"infoTitle": "We recommend using this header",
+						"info": "The \"Accept: */*\" header is added to tell the server that Postman can understand and process all forms of response content types.\n\nIt is recommended that this header be sent, but you can remove the header or enter a new one with a different value.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Accept",
+						"value": "*/*",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "accept-encoding",
+						"sortOrder": 9,
+						"infoTitle": "We recommend using this header",
+						"info": "The Accept-Encoding header is added to indicate to the server that Postman HTTP client supports a defined list of content-encoding or compression algorithms as response.\n\nYou can remove the header or enter a new one with a different value. Doing that may not accurately render the response within the app.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "connection",
+						"sortOrder": 10,
+						"infoTitle": "We recommend using this header",
+						"info": "Postman added the Connection header to indicate the server to keep the underlying network connection open once the current response is received. This allows Postman to reuse the same connection for faster response times in subsequent requests to the same server.\n\nYou can remove this header or enter a new one with a different value, such as `Connection: Close` to control this behaviour.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Connection",
+						"value": "keep-alive",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImVtYWlsIjoiYmVybmFyZG9kdG9tYXNpQGdtYWlsLmNvbSIsInRpcG8iOiJBIiwidGVsZWZvbmUiOiIoNTQpOTk5MDcxMzEwIiwibm9tZSI6IkJlcm5hcmRvIFRvbWFzaSJ9LCJpYXQiOjE3MTMxNTk0OTUsImV4cCI6MTcxMzE2MjQ5NX0.c-nQp9Av80OszlInGOV0nQDlD52laxpGd_aWw3jFiDY",
+						"type": "text",
+						"id": 0
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "javascript"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/clinicas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"clinicas"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Consulta de clinicas",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImVtYWlsIjoiYmVybmFyZG9kdG9tYXNpQGdtYWlsLmNvbSIsInRpcG8iOiJBIiwidGVsZWZvbmUiOiIoNTQpOTk5MDcxMzEwIiwibm9tZSI6IkJlcm5hcmRvIFRvbWFzaSJ9LCJpYXQiOjE3MTMxNTk0OTUsImV4cCI6MTcxMzE2MjQ5NX0.c-nQp9Av80OszlInGOV0nQDlD52laxpGd_aWw3jFiDY",
+								"type": "text",
+								"id": 0
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "javascript"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/clinicas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"clinicas"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "JSON",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"type": "text"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+							"type": "text"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin",
+							"type": "text"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin",
+							"type": "text"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1",
+							"type": "text"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer",
+							"type": "text"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains",
+							"type": "text"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"type": "text"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off",
+							"type": "text"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen",
+							"type": "text"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN",
+							"type": "text"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none",
+							"type": "text"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"type": "text"
+						},
+						{
+							"key": "Content-Length",
+							"value": "757",
+							"type": "text"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2f5-vH7nsH5wswF2RLaw0NJJRZgTziA\"",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Apr 2024 05:44:29 GMT",
+							"type": "text"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"type": "text"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"codigo\": 1,\n        \"nome\": \"Clinica Asclépio\",\n        \"cep\": \"98262432\",\n        \"numpredio\": \"6174\",\n        \"telefone\": \"(54)99906-0913\",\n        \"descricao\": \"Clinica Central - Atendimento geral\"\n    },\n    {\n        \"codigo\": 2,\n        \"nome\": \"Clinica Imhotep\",\n        \"cep\": \"42687089\",\n        \"numpredio\": \"4306\",\n        \"telefone\": \"(54)99905-5899\",\n        \"descricao\": \"Clinica Central - Atendimento geral\"\n    },\n    {\n        \"codigo\": 3,\n        \"nome\": \"Clinica Cecht\",\n        \"cep\": \"53699149\",\n        \"numpredio\": \"2481\",\n        \"telefone\": \"(51)99907-5507\",\n        \"descricao\": \"Clinica Central - Atendimento geral\"\n    },\n    {\n        \"codigo\": 6,\n        \"nome\": \"Clínica XYZ\",\n        \"cep\": \"12345678\",\n        \"numpredio\": \"123\",\n        \"telefone\": \"(11)98765-4321\",\n        \"descricao\": \"Clínica especializada em cardiologia\"\n    },\n    {\n        \"codigo\": 7,\n        \"nome\": \"Clínica XYZ\",\n        \"cep\": \"12345678\",\n        \"numpredio\": \"123\",\n        \"telefone\": \"(11)98765-4321\",\n        \"descricao\": \"Clínica especializada em cardiologia\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Medicos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"name": "cache-control",
+						"sortOrder": 2,
+						"infoTitle": "We recommend using this header",
+						"info": "Postman added \"Cache-Control: no-cache\" as a precautionary measure to prevent the server from returning stale response when one makes repeated requests.\n\nYou can remove this header in the app settings or enter a new one with a different value.",
+						"allowedToToggle": false,
+						"disableEdit": true,
+						"previewSettingsLink": "Go to settings",
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "postman-token",
+						"sortOrder": 3,
+						"infoTitle": "We recommend using this header",
+						"info": "The Postman-Token header appends a random UUID to every outgoing request. Postman adds this header for API developers to better debug requests sent and to ensure separate requests appear distinct to the receiving server.\n\nYou can remove this header in the app settings.",
+						"allowedToToggle": false,
+						"disableEdit": true,
+						"previewSettingsLink": "Go to settings",
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "host",
+						"sortOrder": 6,
+						"infoTitle": "We recommend using this header",
+						"info": "The Host header is added to identify the domain name for which a request is being sent to the server. This header is implicitly sent by every HTTP client.\n\nYou can remove the header or enter a new one with a different value. It is most likely that without this header, your request will return an HTTP 400 error.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "user-agent",
+						"sortOrder": 7,
+						"infoTitle": "We recommend using this header",
+						"info": "The User-Agent header is added to help the server identify Postman as the HTTP requesting application or client.\n\nIt is recommended that this header be sent, but you can remove the header or enter a new one with a different value.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.32.1",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "accept",
+						"sortOrder": 8,
+						"infoTitle": "We recommend using this header",
+						"info": "The \"Accept: */*\" header is added to tell the server that Postman can understand and process all forms of response content types.\n\nIt is recommended that this header be sent, but you can remove the header or enter a new one with a different value.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Accept",
+						"value": "*/*",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "accept-encoding",
+						"sortOrder": 9,
+						"infoTitle": "We recommend using this header",
+						"info": "The Accept-Encoding header is added to indicate to the server that Postman HTTP client supports a defined list of content-encoding or compression algorithms as response.\n\nYou can remove the header or enter a new one with a different value. Doing that may not accurately render the response within the app.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "connection",
+						"sortOrder": 10,
+						"infoTitle": "We recommend using this header",
+						"info": "Postman added the Connection header to indicate the server to keep the underlying network connection open once the current response is received. This allows Postman to reuse the same connection for faster response times in subsequent requests to the same server.\n\nYou can remove this header or enter a new one with a different value, such as `Connection: Close` to control this behaviour.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Connection",
+						"value": "keep-alive",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImVtYWlsIjoiYmVybmFyZG9kdG9tYXNpQGdtYWlsLmNvbSIsInRpcG8iOiJBIiwidGVsZWZvbmUiOiIoNTQpOTk5MDcxMzEwIiwibm9tZSI6IkJlcm5hcmRvIFRvbWFzaSJ9LCJpYXQiOjE3MTMxNTk0OTUsImV4cCI6MTcxMzE2MjQ5NX0.c-nQp9Av80OszlInGOV0nQDlD52laxpGd_aWw3jFiDY",
+						"type": "text",
+						"id": 0
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "javascript"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/medicos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"medicos"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Medicos",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImVtYWlsIjoiYmVybmFyZG9kdG9tYXNpQGdtYWlsLmNvbSIsInRpcG8iOiJBIiwidGVsZWZvbmUiOiIoNTQpOTk5MDcxMzEwIiwibm9tZSI6IkJlcm5hcmRvIFRvbWFzaSJ9LCJpYXQiOjE3MTMxNTk0OTUsImV4cCI6MTcxMzE2MjQ5NX0.c-nQp9Av80OszlInGOV0nQDlD52laxpGd_aWw3jFiDY",
+								"type": "text",
+								"id": 0
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "javascript"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/medicos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"medicos"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "JSON",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"type": "text"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+							"type": "text"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin",
+							"type": "text"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin",
+							"type": "text"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1",
+							"type": "text"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer",
+							"type": "text"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains",
+							"type": "text"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"type": "text"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off",
+							"type": "text"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen",
+							"type": "text"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN",
+							"type": "text"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none",
+							"type": "text"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"type": "text"
+						},
+						{
+							"key": "Content-Length",
+							"value": "363",
+							"type": "text"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"16b-VLFvOf6ei5ZYvxK7nm6HD+kULDU\"",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Apr 2024 05:58:36 GMT",
+							"type": "text"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"type": "text"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"codigo\": 1,\n        \"cpf\": \"686.114.471-15\",\n        \"crm\": \"123456\",\n        \"nome\": \"Victor Lubiam\",\n        \"especialidade\": \"Clinico Geral\",\n        \"telefone\": \"(54)98484-8672\",\n        \"clinica\": 1,\n        \"nomeclinica\": \"Clinica Asclépio\"\n    },\n    {\n        \"codigo\": 4,\n        \"cpf\": \"123.456.789-12\",\n        \"crm\": \"654321\",\n        \"nome\": \"Diogenes Lubiam\",\n        \"especialidade\": \"Clinico Geral\",\n        \"telefone\": \"(54)99907-1310\",\n        \"clinica\": 1,\n        \"nomeclinica\": \"Clinica Asclépio\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Upd Clinica",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"name": "cache-control",
+						"sortOrder": 2,
+						"infoTitle": "We recommend using this header",
+						"info": "Postman added \"Cache-Control: no-cache\" as a precautionary measure to prevent the server from returning stale response when one makes repeated requests.\n\nYou can remove this header in the app settings or enter a new one with a different value.",
+						"allowedToToggle": false,
+						"disableEdit": true,
+						"previewSettingsLink": "Go to settings",
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "postman-token",
+						"sortOrder": 3,
+						"infoTitle": "We recommend using this header",
+						"info": "The Postman-Token header appends a random UUID to every outgoing request. Postman adds this header for API developers to better debug requests sent and to ensure separate requests appear distinct to the receiving server.\n\nYou can remove this header in the app settings.",
+						"allowedToToggle": false,
+						"disableEdit": true,
+						"previewSettingsLink": "Go to settings",
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "content-type",
+						"sortOrder": 4,
+						"infoTitle": "This header was automatically added",
+						"info": "The Content-Type header is added to help the server identify the media type of the request body that is present in this request.\n\nUse the request body tab to control the value or to remove this header.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"previewSettingsLink": "Go to body",
+						"key": "Content-Type",
+						"value": "application/json",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "content-length",
+						"sortOrder": 5,
+						"infoTitle": "This header was automatically added",
+						"info": "The Content-Length header was added to indicate to the server the size of the request body that is added to this request. Server uses this value to parse the request body accurately.\n\nYou can remove the header or enter a new one with a different value.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"previewSettingsLink": "Go to body",
+						"key": "Content-Length",
+						"value": "<calculated when request is sent>",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "host",
+						"sortOrder": 6,
+						"infoTitle": "We recommend using this header",
+						"info": "The Host header is added to identify the domain name for which a request is being sent to the server. This header is implicitly sent by every HTTP client.\n\nYou can remove the header or enter a new one with a different value. It is most likely that without this header, your request will return an HTTP 400 error.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "user-agent",
+						"sortOrder": 7,
+						"infoTitle": "We recommend using this header",
+						"info": "The User-Agent header is added to help the server identify Postman as the HTTP requesting application or client.\n\nIt is recommended that this header be sent, but you can remove the header or enter a new one with a different value.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.32.1",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "accept",
+						"sortOrder": 8,
+						"infoTitle": "We recommend using this header",
+						"info": "The \"Accept: */*\" header is added to tell the server that Postman can understand and process all forms of response content types.\n\nIt is recommended that this header be sent, but you can remove the header or enter a new one with a different value.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Accept",
+						"value": "*/*",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "accept-encoding",
+						"sortOrder": 9,
+						"infoTitle": "We recommend using this header",
+						"info": "The Accept-Encoding header is added to indicate to the server that Postman HTTP client supports a defined list of content-encoding or compression algorithms as response.\n\nYou can remove the header or enter a new one with a different value. Doing that may not accurately render the response within the app.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "connection",
+						"sortOrder": 10,
+						"infoTitle": "We recommend using this header",
+						"info": "Postman added the Connection header to indicate the server to keep the underlying network connection open once the current response is received. This allows Postman to reuse the same connection for faster response times in subsequent requests to the same server.\n\nYou can remove this header or enter a new one with a different value, such as `Connection: Close` to control this behaviour.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Connection",
+						"value": "keep-alive",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImVtYWlsIjoiYmVybmFyZG9kdG9tYXNpQGdtYWlsLmNvbSIsInRpcG8iOiJBIiwidGVsZWZvbmUiOiIoNTQpOTk5MDcxMzEwIiwibm9tZSI6IkJlcm5hcmRvIFRvbWFzaSJ9LCJpYXQiOjE3MTMxNTk0OTUsImV4cCI6MTcxMzE2MjQ5NX0.c-nQp9Av80OszlInGOV0nQDlD52laxpGd_aWw3jFiDY",
+						"type": "text",
+						"id": 0
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"codigo\": 7,\n    \"nome\": \"Clínica XYZ\",\n    \"cep\": \"12345678\",\n    \"numpredio\": \"321\",\n    \"telefone\": \"(11)98765-4321\",\n    \"descricao\": \"Clínica especializada em cardiologia\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/clinicas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"clinicas"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Upd Clinica",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImVtYWlsIjoiYmVybmFyZG9kdG9tYXNpQGdtYWlsLmNvbSIsInRpcG8iOiJBIiwidGVsZWZvbmUiOiIoNTQpOTk5MDcxMzEwIiwibm9tZSI6IkJlcm5hcmRvIFRvbWFzaSJ9LCJpYXQiOjE3MTMxNTk0OTUsImV4cCI6MTcxMzE2MjQ5NX0.c-nQp9Av80OszlInGOV0nQDlD52laxpGd_aWw3jFiDY",
+								"type": "text",
+								"id": 0
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"codigo\": 7,\n    \"nome\": \"Clínica XYZ\",\n    \"cep\": \"12345678\",\n    \"numpredio\": \"321\",\n    \"telefone\": \"(11)98765-4321\",\n    \"descricao\": \"Clínica especializada em cardiologia\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/clinicas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"clinicas"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "JSON",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"type": "text"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+							"type": "text"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin",
+							"type": "text"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin",
+							"type": "text"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1",
+							"type": "text"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer",
+							"type": "text"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains",
+							"type": "text"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"type": "text"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off",
+							"type": "text"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen",
+							"type": "text"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN",
+							"type": "text"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none",
+							"type": "text"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"type": "text"
+						},
+						{
+							"key": "Content-Length",
+							"value": "209",
+							"type": "text"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"d1-zG6CGugZIv64LkcNhI0OSju2FQk\"",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Apr 2024 05:47:19 GMT",
+							"type": "text"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"type": "text"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Clínica alterada\",\n    \"objeto\": {\n        \"codigo\": 7,\n        \"nome\": \"Clínica XYZ\",\n        \"cep\": \"12345678\",\n        \"numpredio\": \"321\",\n        \"telefone\": \"(11)98765-4321\",\n        \"descricao\": \"Clínica especializada em cardiologia\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Upd Medico",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"name": "cache-control",
+						"sortOrder": 2,
+						"infoTitle": "We recommend using this header",
+						"info": "Postman added \"Cache-Control: no-cache\" as a precautionary measure to prevent the server from returning stale response when one makes repeated requests.\n\nYou can remove this header in the app settings or enter a new one with a different value.",
+						"allowedToToggle": false,
+						"disableEdit": true,
+						"previewSettingsLink": "Go to settings",
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "postman-token",
+						"sortOrder": 3,
+						"infoTitle": "We recommend using this header",
+						"info": "The Postman-Token header appends a random UUID to every outgoing request. Postman adds this header for API developers to better debug requests sent and to ensure separate requests appear distinct to the receiving server.\n\nYou can remove this header in the app settings.",
+						"allowedToToggle": false,
+						"disableEdit": true,
+						"previewSettingsLink": "Go to settings",
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "content-type",
+						"sortOrder": 4,
+						"infoTitle": "This header was automatically added",
+						"info": "The Content-Type header is added to help the server identify the media type of the request body that is present in this request.\n\nUse the request body tab to control the value or to remove this header.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"previewSettingsLink": "Go to body",
+						"key": "Content-Type",
+						"value": "application/json",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "content-length",
+						"sortOrder": 5,
+						"infoTitle": "This header was automatically added",
+						"info": "The Content-Length header was added to indicate to the server the size of the request body that is added to this request. Server uses this value to parse the request body accurately.\n\nYou can remove the header or enter a new one with a different value.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"previewSettingsLink": "Go to body",
+						"key": "Content-Length",
+						"value": "<calculated when request is sent>",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "host",
+						"sortOrder": 6,
+						"infoTitle": "We recommend using this header",
+						"info": "The Host header is added to identify the domain name for which a request is being sent to the server. This header is implicitly sent by every HTTP client.\n\nYou can remove the header or enter a new one with a different value. It is most likely that without this header, your request will return an HTTP 400 error.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "user-agent",
+						"sortOrder": 7,
+						"infoTitle": "We recommend using this header",
+						"info": "The User-Agent header is added to help the server identify Postman as the HTTP requesting application or client.\n\nIt is recommended that this header be sent, but you can remove the header or enter a new one with a different value.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.32.1",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "accept",
+						"sortOrder": 8,
+						"infoTitle": "We recommend using this header",
+						"info": "The \"Accept: */*\" header is added to tell the server that Postman can understand and process all forms of response content types.\n\nIt is recommended that this header be sent, but you can remove the header or enter a new one with a different value.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Accept",
+						"value": "*/*",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "accept-encoding",
+						"sortOrder": 9,
+						"infoTitle": "We recommend using this header",
+						"info": "The Accept-Encoding header is added to indicate to the server that Postman HTTP client supports a defined list of content-encoding or compression algorithms as response.\n\nYou can remove the header or enter a new one with a different value. Doing that may not accurately render the response within the app.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "connection",
+						"sortOrder": 10,
+						"infoTitle": "We recommend using this header",
+						"info": "Postman added the Connection header to indicate the server to keep the underlying network connection open once the current response is received. This allows Postman to reuse the same connection for faster response times in subsequent requests to the same server.\n\nYou can remove this header or enter a new one with a different value, such as `Connection: Close` to control this behaviour.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Connection",
+						"value": "keep-alive",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImVtYWlsIjoiYmVybmFyZG9kdG9tYXNpQGdtYWlsLmNvbSIsInRpcG8iOiJBIiwidGVsZWZvbmUiOiIoNTQpOTk5MDcxMzEwIiwibm9tZSI6IkJlcm5hcmRvIFRvbWFzaSJ9LCJpYXQiOjE3MTMxNTk0OTUsImV4cCI6MTcxMzE2MjQ5NX0.c-nQp9Av80OszlInGOV0nQDlD52laxpGd_aWw3jFiDY",
+						"type": "text",
+						"id": 0
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"codigo\" : 2,\n    \"cpf\" : \"123.456.789-13\",\n    \"crm\" : \"654321\",\n    \"nome\" : \"Vitchenzo Lubiam\",\n    \"especialidade\" : \"Clinico Geral\",\n    \"telefone\" : \"(54)99907-1310\",\n    \"clinica\" : 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/medicos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"medicos"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Upd Medico",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImVtYWlsIjoiYmVybmFyZG9kdG9tYXNpQGdtYWlsLmNvbSIsInRpcG8iOiJBIiwidGVsZWZvbmUiOiIoNTQpOTk5MDcxMzEwIiwibm9tZSI6IkJlcm5hcmRvIFRvbWFzaSJ9LCJpYXQiOjE3MTMxNTk0OTUsImV4cCI6MTcxMzE2MjQ5NX0.c-nQp9Av80OszlInGOV0nQDlD52laxpGd_aWw3jFiDY",
+								"type": "text",
+								"id": 0
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"codigo\" : 2,\n    \"cpf\" : \"123.456.789-13\",\n    \"crm\" : \"654321\",\n    \"nome\" : \"Vitchenzo Lubiam\",\n    \"especialidade\" : \"Clinico Geral\",\n    \"telefone\" : \"(54)99907-1310\",\n    \"clinica\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/medicos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"medicos"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "JSON",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"type": "text"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+							"type": "text"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin",
+							"type": "text"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin",
+							"type": "text"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1",
+							"type": "text"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer",
+							"type": "text"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains",
+							"type": "text"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"type": "text"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off",
+							"type": "text"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen",
+							"type": "text"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN",
+							"type": "text"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none",
+							"type": "text"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"type": "text"
+						},
+						{
+							"key": "Content-Length",
+							"value": "52",
+							"type": "text"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"34-qEKE2qZGv6uiDjAHIyvHQOj/EZo\"",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Apr 2024 06:01:07 GMT",
+							"type": "text"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"type": "text"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Médico atualizado!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Del Clinica",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"name": "cache-control",
+						"sortOrder": 2,
+						"infoTitle": "We recommend using this header",
+						"info": "Postman added \"Cache-Control: no-cache\" as a precautionary measure to prevent the server from returning stale response when one makes repeated requests.\n\nYou can remove this header in the app settings or enter a new one with a different value.",
+						"allowedToToggle": false,
+						"disableEdit": true,
+						"previewSettingsLink": "Go to settings",
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "postman-token",
+						"sortOrder": 3,
+						"infoTitle": "We recommend using this header",
+						"info": "The Postman-Token header appends a random UUID to every outgoing request. Postman adds this header for API developers to better debug requests sent and to ensure separate requests appear distinct to the receiving server.\n\nYou can remove this header in the app settings.",
+						"allowedToToggle": false,
+						"disableEdit": true,
+						"previewSettingsLink": "Go to settings",
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "host",
+						"sortOrder": 6,
+						"infoTitle": "We recommend using this header",
+						"info": "The Host header is added to identify the domain name for which a request is being sent to the server. This header is implicitly sent by every HTTP client.\n\nYou can remove the header or enter a new one with a different value. It is most likely that without this header, your request will return an HTTP 400 error.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "user-agent",
+						"sortOrder": 7,
+						"infoTitle": "We recommend using this header",
+						"info": "The User-Agent header is added to help the server identify Postman as the HTTP requesting application or client.\n\nIt is recommended that this header be sent, but you can remove the header or enter a new one with a different value.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.32.1",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "accept",
+						"sortOrder": 8,
+						"infoTitle": "We recommend using this header",
+						"info": "The \"Accept: */*\" header is added to tell the server that Postman can understand and process all forms of response content types.\n\nIt is recommended that this header be sent, but you can remove the header or enter a new one with a different value.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Accept",
+						"value": "*/*",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "accept-encoding",
+						"sortOrder": 9,
+						"infoTitle": "We recommend using this header",
+						"info": "The Accept-Encoding header is added to indicate to the server that Postman HTTP client supports a defined list of content-encoding or compression algorithms as response.\n\nYou can remove the header or enter a new one with a different value. Doing that may not accurately render the response within the app.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "connection",
+						"sortOrder": 10,
+						"infoTitle": "We recommend using this header",
+						"info": "Postman added the Connection header to indicate the server to keep the underlying network connection open once the current response is received. This allows Postman to reuse the same connection for faster response times in subsequent requests to the same server.\n\nYou can remove this header or enter a new one with a different value, such as `Connection: Close` to control this behaviour.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Connection",
+						"value": "keep-alive",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImVtYWlsIjoiYmVybmFyZG9kdG9tYXNpQGdtYWlsLmNvbSIsInRpcG8iOiJBIiwidGVsZWZvbmUiOiIoNTQpOTk5MDcxMzEwIiwibm9tZSI6IkJlcm5hcmRvIFRvbWFzaSJ9LCJpYXQiOjE3MTMxNjAyMjgsImV4cCI6MTcxMzE2MzIyOH0.PJw7AX9vRnARwnTjbarE2aBgMCTREetkQUSsHR8u7yM",
+						"type": "text",
+						"id": 0
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3003/clinicas/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"clinicas",
+						"7"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Del Clinica",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImVtYWlsIjoiYmVybmFyZG9kdG9tYXNpQGdtYWlsLmNvbSIsInRpcG8iOiJBIiwidGVsZWZvbmUiOiIoNTQpOTk5MDcxMzEwIiwibm9tZSI6IkJlcm5hcmRvIFRvbWFzaSJ9LCJpYXQiOjE3MTMxNjAyMjgsImV4cCI6MTcxMzE2MzIyOH0.PJw7AX9vRnARwnTjbarE2aBgMCTREetkQUSsHR8u7yM",
+								"type": "text",
+								"id": 0
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3003/clinicas/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"clinicas",
+								"7"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "JSON",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"type": "text"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+							"type": "text"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin",
+							"type": "text"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin",
+							"type": "text"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1",
+							"type": "text"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer",
+							"type": "text"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains",
+							"type": "text"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"type": "text"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off",
+							"type": "text"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen",
+							"type": "text"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN",
+							"type": "text"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none",
+							"type": "text"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"type": "text"
+						},
+						{
+							"key": "Content-Length",
+							"value": "50",
+							"type": "text"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"32-FUrcQRYUp1sHrcnidqP9aWr+xYg\"",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Apr 2024 05:51:04 GMT",
+							"type": "text"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"type": "text"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Clínica removida\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Del Medico",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"name": "cache-control",
+						"sortOrder": 2,
+						"infoTitle": "We recommend using this header",
+						"info": "Postman added \"Cache-Control: no-cache\" as a precautionary measure to prevent the server from returning stale response when one makes repeated requests.\n\nYou can remove this header in the app settings or enter a new one with a different value.",
+						"allowedToToggle": false,
+						"disableEdit": true,
+						"previewSettingsLink": "Go to settings",
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "postman-token",
+						"sortOrder": 3,
+						"infoTitle": "We recommend using this header",
+						"info": "The Postman-Token header appends a random UUID to every outgoing request. Postman adds this header for API developers to better debug requests sent and to ensure separate requests appear distinct to the receiving server.\n\nYou can remove this header in the app settings.",
+						"allowedToToggle": false,
+						"disableEdit": true,
+						"previewSettingsLink": "Go to settings",
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "host",
+						"sortOrder": 6,
+						"infoTitle": "We recommend using this header",
+						"info": "The Host header is added to identify the domain name for which a request is being sent to the server. This header is implicitly sent by every HTTP client.\n\nYou can remove the header or enter a new one with a different value. It is most likely that without this header, your request will return an HTTP 400 error.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "user-agent",
+						"sortOrder": 7,
+						"infoTitle": "We recommend using this header",
+						"info": "The User-Agent header is added to help the server identify Postman as the HTTP requesting application or client.\n\nIt is recommended that this header be sent, but you can remove the header or enter a new one with a different value.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.32.1",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "accept",
+						"sortOrder": 8,
+						"infoTitle": "We recommend using this header",
+						"info": "The \"Accept: */*\" header is added to tell the server that Postman can understand and process all forms of response content types.\n\nIt is recommended that this header be sent, but you can remove the header or enter a new one with a different value.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Accept",
+						"value": "*/*",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "accept-encoding",
+						"sortOrder": 9,
+						"infoTitle": "We recommend using this header",
+						"info": "The Accept-Encoding header is added to indicate to the server that Postman HTTP client supports a defined list of content-encoding or compression algorithms as response.\n\nYou can remove the header or enter a new one with a different value. Doing that may not accurately render the response within the app.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "connection",
+						"sortOrder": 10,
+						"infoTitle": "We recommend using this header",
+						"info": "Postman added the Connection header to indicate the server to keep the underlying network connection open once the current response is received. This allows Postman to reuse the same connection for faster response times in subsequent requests to the same server.\n\nYou can remove this header or enter a new one with a different value, such as `Connection: Close` to control this behaviour.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Connection",
+						"value": "keep-alive",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImVtYWlsIjoiYmVybmFyZG9kdG9tYXNpQGdtYWlsLmNvbSIsInRpcG8iOiJBIiwidGVsZWZvbmUiOiIoNTQpOTk5MDcxMzEwIiwibm9tZSI6IkJlcm5hcmRvIFRvbWFzaSJ9LCJpYXQiOjE3MTMxNjAyMjgsImV4cCI6MTcxMzE2MzIyOH0.PJw7AX9vRnARwnTjbarE2aBgMCTREetkQUSsHR8u7yM",
+						"type": "text",
+						"id": 0
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3003/medicos/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"medicos",
+						"4"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Del Medico",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImVtYWlsIjoiYmVybmFyZG9kdG9tYXNpQGdtYWlsLmNvbSIsInRpcG8iOiJBIiwidGVsZWZvbmUiOiIoNTQpOTk5MDcxMzEwIiwibm9tZSI6IkJlcm5hcmRvIFRvbWFzaSJ9LCJpYXQiOjE3MTMxNjAyMjgsImV4cCI6MTcxMzE2MzIyOH0.PJw7AX9vRnARwnTjbarE2aBgMCTREetkQUSsHR8u7yM",
+								"type": "text",
+								"id": 0
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3003/medicos/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"medicos",
+								"4"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "JSON",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"type": "text"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+							"type": "text"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin",
+							"type": "text"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin",
+							"type": "text"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1",
+							"type": "text"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer",
+							"type": "text"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains",
+							"type": "text"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"type": "text"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off",
+							"type": "text"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen",
+							"type": "text"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN",
+							"type": "text"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none",
+							"type": "text"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"type": "text"
+						},
+						{
+							"key": "Content-Length",
+							"value": "50",
+							"type": "text"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"32-/irwOzAWC4JBedVC/MBM+eYmqN4\"",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Apr 2024 06:03:29 GMT",
+							"type": "text"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"type": "text"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Médico removido!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Cod Clinicas",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"name": "cache-control",
+						"sortOrder": 2,
+						"infoTitle": "We recommend using this header",
+						"info": "Postman added \"Cache-Control: no-cache\" as a precautionary measure to prevent the server from returning stale response when one makes repeated requests.\n\nYou can remove this header in the app settings or enter a new one with a different value.",
+						"allowedToToggle": false,
+						"disableEdit": true,
+						"previewSettingsLink": "Go to settings",
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "postman-token",
+						"sortOrder": 3,
+						"infoTitle": "We recommend using this header",
+						"info": "The Postman-Token header appends a random UUID to every outgoing request. Postman adds this header for API developers to better debug requests sent and to ensure separate requests appear distinct to the receiving server.\n\nYou can remove this header in the app settings.",
+						"allowedToToggle": false,
+						"disableEdit": true,
+						"previewSettingsLink": "Go to settings",
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "host",
+						"sortOrder": 6,
+						"infoTitle": "We recommend using this header",
+						"info": "The Host header is added to identify the domain name for which a request is being sent to the server. This header is implicitly sent by every HTTP client.\n\nYou can remove the header or enter a new one with a different value. It is most likely that without this header, your request will return an HTTP 400 error.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "user-agent",
+						"sortOrder": 7,
+						"infoTitle": "We recommend using this header",
+						"info": "The User-Agent header is added to help the server identify Postman as the HTTP requesting application or client.\n\nIt is recommended that this header be sent, but you can remove the header or enter a new one with a different value.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.32.1",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "accept",
+						"sortOrder": 8,
+						"infoTitle": "We recommend using this header",
+						"info": "The \"Accept: */*\" header is added to tell the server that Postman can understand and process all forms of response content types.\n\nIt is recommended that this header be sent, but you can remove the header or enter a new one with a different value.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Accept",
+						"value": "*/*",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "accept-encoding",
+						"sortOrder": 9,
+						"infoTitle": "We recommend using this header",
+						"info": "The Accept-Encoding header is added to indicate to the server that Postman HTTP client supports a defined list of content-encoding or compression algorithms as response.\n\nYou can remove the header or enter a new one with a different value. Doing that may not accurately render the response within the app.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "connection",
+						"sortOrder": 10,
+						"infoTitle": "We recommend using this header",
+						"info": "Postman added the Connection header to indicate the server to keep the underlying network connection open once the current response is received. This allows Postman to reuse the same connection for faster response times in subsequent requests to the same server.\n\nYou can remove this header or enter a new one with a different value, such as `Connection: Close` to control this behaviour.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Connection",
+						"value": "keep-alive",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImVtYWlsIjoiYmVybmFyZG9kdG9tYXNpQGdtYWlsLmNvbSIsInRpcG8iOiJBIiwidGVsZWZvbmUiOiIoNTQpOTk5MDcxMzEwIiwibm9tZSI6IkJlcm5hcmRvIFRvbWFzaSJ9LCJpYXQiOjE3MTMxNjAyMjgsImV4cCI6MTcxMzE2MzIyOH0.PJw7AX9vRnARwnTjbarE2aBgMCTREetkQUSsHR8u7yM",
+						"type": "text",
+						"id": 0
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3003/clinicas/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"clinicas",
+						"6"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Cod Clinicas",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImVtYWlsIjoiYmVybmFyZG9kdG9tYXNpQGdtYWlsLmNvbSIsInRpcG8iOiJBIiwidGVsZWZvbmUiOiIoNTQpOTk5MDcxMzEwIiwibm9tZSI6IkJlcm5hcmRvIFRvbWFzaSJ9LCJpYXQiOjE3MTMxNjAyMjgsImV4cCI6MTcxMzE2MzIyOH0.PJw7AX9vRnARwnTjbarE2aBgMCTREetkQUSsHR8u7yM",
+								"type": "text",
+								"id": 0
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3003/clinicas/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"clinicas",
+								"6"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "JSON",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"type": "text"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+							"type": "text"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin",
+							"type": "text"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin",
+							"type": "text"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1",
+							"type": "text"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer",
+							"type": "text"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains",
+							"type": "text"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"type": "text"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off",
+							"type": "text"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen",
+							"type": "text"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN",
+							"type": "text"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none",
+							"type": "text"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"type": "text"
+						},
+						{
+							"key": "Content-Length",
+							"value": "149",
+							"type": "text"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"95-8zjU5IXVsZvJczpYPNCfHLleJlU\"",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Apr 2024 05:52:03 GMT",
+							"type": "text"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"type": "text"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"codigo\": 6,\n    \"nome\": \"Clínica XYZ\",\n    \"cep\": \"12345678\",\n    \"numpredio\": \"123\",\n    \"telefone\": \"(11)98765-4321\",\n    \"descricao\": \"Clínica especializada em cardiologia\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Cod Medicos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"name": "cache-control",
+						"sortOrder": 2,
+						"infoTitle": "We recommend using this header",
+						"info": "Postman added \"Cache-Control: no-cache\" as a precautionary measure to prevent the server from returning stale response when one makes repeated requests.\n\nYou can remove this header in the app settings or enter a new one with a different value.",
+						"allowedToToggle": false,
+						"disableEdit": true,
+						"previewSettingsLink": "Go to settings",
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "postman-token",
+						"sortOrder": 3,
+						"infoTitle": "We recommend using this header",
+						"info": "The Postman-Token header appends a random UUID to every outgoing request. Postman adds this header for API developers to better debug requests sent and to ensure separate requests appear distinct to the receiving server.\n\nYou can remove this header in the app settings.",
+						"allowedToToggle": false,
+						"disableEdit": true,
+						"previewSettingsLink": "Go to settings",
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "host",
+						"sortOrder": 6,
+						"infoTitle": "We recommend using this header",
+						"info": "The Host header is added to identify the domain name for which a request is being sent to the server. This header is implicitly sent by every HTTP client.\n\nYou can remove the header or enter a new one with a different value. It is most likely that without this header, your request will return an HTTP 400 error.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "user-agent",
+						"sortOrder": 7,
+						"infoTitle": "We recommend using this header",
+						"info": "The User-Agent header is added to help the server identify Postman as the HTTP requesting application or client.\n\nIt is recommended that this header be sent, but you can remove the header or enter a new one with a different value.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.32.1",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "accept",
+						"sortOrder": 8,
+						"infoTitle": "We recommend using this header",
+						"info": "The \"Accept: */*\" header is added to tell the server that Postman can understand and process all forms of response content types.\n\nIt is recommended that this header be sent, but you can remove the header or enter a new one with a different value.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Accept",
+						"value": "*/*",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "accept-encoding",
+						"sortOrder": 9,
+						"infoTitle": "We recommend using this header",
+						"info": "The Accept-Encoding header is added to indicate to the server that Postman HTTP client supports a defined list of content-encoding or compression algorithms as response.\n\nYou can remove the header or enter a new one with a different value. Doing that may not accurately render the response within the app.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"name": "connection",
+						"sortOrder": 10,
+						"infoTitle": "We recommend using this header",
+						"info": "Postman added the Connection header to indicate the server to keep the underlying network connection open once the current response is received. This allows Postman to reuse the same connection for faster response times in subsequent requests to the same server.\n\nYou can remove this header or enter a new one with a different value, such as `Connection: Close` to control this behaviour.",
+						"allowedToToggle": true,
+						"disableEdit": true,
+						"key": "Connection",
+						"value": "keep-alive",
+						"system": true,
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImVtYWlsIjoiYmVybmFyZG9kdG9tYXNpQGdtYWlsLmNvbSIsInRpcG8iOiJBIiwidGVsZWZvbmUiOiIoNTQpOTk5MDcxMzEwIiwibm9tZSI6IkJlcm5hcmRvIFRvbWFzaSJ9LCJpYXQiOjE3MTMxNjAyMjgsImV4cCI6MTcxMzE2MzIyOH0.PJw7AX9vRnARwnTjbarE2aBgMCTREetkQUSsHR8u7yM",
+						"type": "text",
+						"id": 0
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3003/clinicas/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"clinicas",
+						"6"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Cod Medicos",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImVtYWlsIjoiYmVybmFyZG9kdG9tYXNpQGdtYWlsLmNvbSIsInRpcG8iOiJBIiwidGVsZWZvbmUiOiIoNTQpOTk5MDcxMzEwIiwibm9tZSI6IkJlcm5hcmRvIFRvbWFzaSJ9LCJpYXQiOjE3MTMxNjAyMjgsImV4cCI6MTcxMzE2MzIyOH0.PJw7AX9vRnARwnTjbarE2aBgMCTREetkQUSsHR8u7yM",
+								"type": "text",
+								"id": 0
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3003/medicos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"medicos",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "JSON",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"type": "text"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+							"type": "text"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin",
+							"type": "text"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin",
+							"type": "text"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1",
+							"type": "text"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer",
+							"type": "text"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains",
+							"type": "text"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"type": "text"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off",
+							"type": "text"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen",
+							"type": "text"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN",
+							"type": "text"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none",
+							"type": "text"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"type": "text"
+						},
+						{
+							"key": "Content-Length",
+							"value": "145",
+							"type": "text"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"91-k3HnXWMfxJOTw+8naJ6Zae9eFkY\"",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Apr 2024 06:04:18 GMT",
+							"type": "text"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"type": "text"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"codigo\": 1,\n    \"cpf\": \"686.114.471-15\",\n    \"crm\": \"123456\",\n    \"nome\": \"Victor Lubiam\",\n    \"especialidade\": \"Clinico Geral\",\n    \"telefone\": \"(54)98484-8672\",\n    \"clinica\": 1\n}"
+				}
+			]
+		}
+	]
+}
